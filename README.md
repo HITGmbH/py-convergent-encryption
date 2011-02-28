@@ -136,7 +136,7 @@ encryption key.
 This module works as follows, the additional secret and the merge step are
 optional:
 
-![Convergent Encryption Schema](raw/master/Documentation/CE-Schema.png)
+![Convergent Encryption Schema](py-convergent-encryption/raw/master/Documentation/CE-Schema.png)
 
 Where `secret` is a random string of at least 32 Bytes and `append` is
 technically implemented by first updating an initialized SHA256d object with
