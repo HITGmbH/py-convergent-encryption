@@ -45,7 +45,7 @@ Example encrypting the lorem ipsum[^1]:
     >>> plain_text == lorem
     True
 
-### `convergent.ConvergentEncryption(secret, warn)`
+### convergent.ConvergentEncryption(secret, warn)
 
 `secret`: an optional secret string that guards against confirmation-of-a-file
 attack and learn-partial-information attack. The secret is **not needed** for
@@ -55,7 +55,7 @@ successfull.
 `warn`: True by default, sends a warning message to the logging system if no
 secret was given. Only one log message per process is logged.
 
-### `convergent.ConvergentEncryption.set_convergence_secret(secret)`
+### convergent.ConvergentEncryption.set_convergence_secret(secret)
 
 `secret`: See `secret` above. Used to set the secret if the class is used as a
 mix-in. The secret can only be set once.
@@ -65,21 +65,21 @@ Returns nothing
 Raises convergent.CryptError if the secret was already set.
 
 
-### `convergent.ConvergentEncryption.encrypt(data)`
+### convergent.ConvergentEncryption.encrypt(data)
 
 Encrypts the string `data`.
 
 Returns a tuple of three: the encryption key (needed for decryption), a block
 id and the encrypted data.
 
-### `convergent.ConvergentEncryption.decrypt(key, ciphertext, verify=False)`
+### convergent.ConvergentEncryption.decrypt(key, ciphertext, verify=False)
 
 Decrypts the ciphertext using `key`. If verify is true and the convergence
 secret was set the decrypted plain text is verified and convergent.CryptError
 raised if the decryption process was not successfull.
 
 
-### `convergent.encrypt_key(key, nonce, data)`
+### convergent.encrypt_key(key, nonce, data)
 
 Convenience function. En- or decrypts data using a one time key calculated
 from `key` and `nonce`.
