@@ -119,7 +119,7 @@ The output of SHA256(data) (32 Bytes) are again fed into SHA256. The resulting
 
 Convergent encryptions uses the cryptographic hash of the plaintext as the
 encryption key so that identical plaintexts always encrypt to identical
-ciphertext values as it always   identical encryption keys.
+ciphertext values as it always uses identical encryption keys.
 
 This implementation uses SHA256d as a cryptographic hash function and AES-256 in Counter (CTR) mode as a block cipher.
 
