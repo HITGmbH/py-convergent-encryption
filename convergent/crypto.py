@@ -145,11 +145,8 @@ class SHA256d(object):
         self.h.update(data)
 
     def digest(self):
-        if not hasattr(self,"_digest"):
-            self._digest = sha256(self.h.digest()).digest()[:self.truncate_to]
-            del self.h
-        return self._digest
-    
+        return sha256(self.h.digest()).digest()[:self.truncate_to]
+
     def hexdigest(self):
         return self.digest().encode('hex')
     
