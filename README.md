@@ -1,4 +1,4 @@
-# Convergent Encryption Overview
+# Convergent Encryption Overview [![Build Status](https://secure.travis-ci.org/HITGmbH/py-convergent-encryption.png)](http://travis-ci.org/HITGmbH/py-convergent-encryption)
 
 This module implements convergent encryption and generation of an id derived
 from the plaintext.
